@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>727</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>欢迎使用贝爷食材速查系统</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>841</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>计算</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>明确生物类型：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> 重量（kg）：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>41</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>数量：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="MingQueAdd">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>60</y>
+        <width>75</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>添加类型</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>30</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>结果：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>110</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>卡路里总量
+（kg ）：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>190</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>建议食用量
+（kg）：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>270</y>
+        <width>111</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>不闹肚子的量
+（g）：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>360</y>
+        <width>111</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>可能引发的收视率
+（m）：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>500</y>
+        <width>211</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>贝爷的野外直播和教程
+详细的食谱等见附录!!</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>头长
+（去掉才可以吃）：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>320</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>生物直径：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>350</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>身体长：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BMingQueAdd">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>320</y>
+        <width>75</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>添加类型</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>不明确生物类型：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Calculate">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>610</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>计算</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>10</y>
+        <width>20</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="MingQueRecord">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>256</width>
+        <height>121</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="BMingQueRecord">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>470</y>
+        <width>256</width>
+        <height>121</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>410</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>数量：</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>135</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLineEdit" name="MingQueTNT"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="MingQueQuantity"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>324</y>
+        <width>135</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="BMingQueDiameter">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="BMingQueLength">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="BMingQueHeadLength">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="BMingQueQuantity"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="MingQueClear">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>160</y>
+        <width>75</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>清除</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BMingQueClear">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>510</y>
+        <width>75</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>清除</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ResultTotal">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>100</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ResultTNT">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>180</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ResultBarrier">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>270</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ResultAlert">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>350</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>layoutWidget</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>label</zorder>
+     <zorder>label_2</zorder>
+     <zorder>label_3</zorder>
+     <zorder>MingQueAdd</zorder>
+     <zorder>label_8</zorder>
+     <zorder>label_9</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label_12</zorder>
+     <zorder>label_13</zorder>
+     <zorder>label_14</zorder>
+     <zorder>label_7</zorder>
+     <zorder>label_5</zorder>
+     <zorder>label_6</zorder>
+     <zorder>BMingQueAdd</zorder>
+     <zorder>label_4</zorder>
+     <zorder>Calculate</zorder>
+     <zorder>line</zorder>
+     <zorder>MingQueRecord</zorder>
+     <zorder>BMingQueRecord</zorder>
+     <zorder>label_19</zorder>
+     <zorder>MingQueClear</zorder>
+     <zorder>BMingQueClear</zorder>
+     <zorder>ResultTotal</zorder>
+     <zorder>ResultTNT</zorder>
+     <zorder>ResultBarrier</zorder>
+     <zorder>ResultAlert</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>附录</string>
+     </attribute>
+     <widget class="QToolBox" name="toolBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>801</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>801</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>热量换算</string>
+       </attribute>
+       <widget class="QTableWidget" name="Table1">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>301</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <column>
+         <property name="text">
+          <string>动物名</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>热量</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="ThermoRemove">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>210</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ThermoAdd">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>60</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>新增</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ThermoSave">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>360</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>801</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>常见动物属性</string>
+       </attribute>
+       <widget class="QTableWidget" name="Table2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>641</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>动物名</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>身体部位</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>美味程度</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>蕴含卡路里</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>食用上限</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>备注</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="AnimalRemove">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>220</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AnimalAdd">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>80</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>新增</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AnimalSave">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>360</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>801</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>荒野求生记录</string>
+       </attribute>
+       <widget class="QTableWidget" name="Table3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>641</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>地方</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>环境类型</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>危险程度</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>存活几率</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>携带装备</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>备注</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="SvvAdd">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>90</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>新增</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="SvvRemove">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>210</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="SvvSave">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>320</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
